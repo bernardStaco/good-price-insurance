@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Good Price Insurance – Protecting What Matters Most</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&family=Fraunces:ital,wght@0,600;0,700;1,700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ════════════════ NAV ════════════════ -->
+<nav>
+  <div class="nav-inner">
+    <a href="#home" class="logo">
+      <div class="logo-icon">🛡️</div>
+      <div class="logo-text">
+        Good Price Insurance
+        <span>Protection You Can Trust</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#states">States</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact" class="btn btn-primary nav-cta">Get a Free Quote</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+      <li><a href="#states" onclick="toggleMenu()">States Served</a></li>
+      <li><a href="#about" onclick="toggleMenu()">About</a></li>
+      <li><a href="#testimonials" onclick="toggleMenu()">Reviews</a></li>
+      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-primary" onclick="toggleMenu()">Get a Free Quote</a>
+  </div>
+</nav>
+
+<!-- ════════════════ HERO ════════════════ -->
+<section id="home">
+  <div class="hero-bg-pattern"></div>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-left fade-in">
+        <div class="hero-badge">Licensed Agent · 9 States</div>
+        <h1 class="hero-title">
+          Protecting<br/>
+          <em>What Matters</em><br/>
+          Most.
+        </h1>
+        <p class="hero-sub">
+          Affordable coverage. Honest advice. Peace of mind.<br/>
+          Helping families across 9 states stay protected — one family at a time.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">🛡️ Get a Free Quote</a>
+          <a href="#contact" class="btn btn-outline">📞 Schedule a Call</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num">9</div>
+            <div class="stat-lbl">States Served</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">4</div>
+            <div class="stat-lbl">Coverage Types</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">$0</div>
+            <div class="stat-lbl">Consultation Fee</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">100%</div>
+            <div class="stat-lbl">No-Pressure Promise</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-right fade-in">
+        <div class="hero-card">
+          <!-- Hero image — replace src with your own photo (recommended: 600×260px) -->
+          <div class="hero-img-wrap">
+            <img src="images/hero-picture.png" alt="Family protected by Good Price Insurance" onerror="this.style.display='none'" />
+            <div class="hero-img-placeholder">
+              <span>🏡</span>
+              <p>Add a hero photo here · 600 × 260 px</p>
+            </div>
+          </div>
+          <div class="hero-card-body">
+          <h3>Coverage <span>Options</span></h3>
+          <ul class="coverage-list">
+            <li class="coverage-item">
+              <div class="cov-icon">❤️</div>
+              <div>
+                <div class="cov-title">Life Insurance</div>
+                <div class="cov-sub">Protect your family's financial future</div>
+              </div>
+            </li>
+            <li class="coverage-item">
+              <div class="cov-icon">🕊️</div>
+              <div>
+                <div class="cov-title">Final Expense</div>
+                <div class="cov-sub">Cover end-of-life costs with dignity</div>
+              </div>
+            </li>
+            <li class="coverage-item">
+              <div class="cov-icon">🏥</div>
+              <div>
+                <div class="cov-title">Health Insurance</div>
+                <div class="cov-sub">Comprehensive healthcare coverage</div>
+              </div>
+            </li>
+            <li class="coverage-item">
+              <div class="cov-icon">👴</div>
+              <div>
+                <div class="cov-title">Medicare Plans</div>
+                <div class="cov-sub">Expert Medicare guidance &amp; enrollment</div>
+              </div>
+            </li>
+          </ul>
+          </div><!-- /.hero-card-body -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ TRUST BAR ════════════════ -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item"><span>✔</span> Free Consultations</div>
+    <div class="trust-item"><span>✔</span> No-Pressure Quotes</div>
+    <div class="trust-item"><span>✔</span> Personalized Plan Comparisons</div>
+    <div class="trust-item"><span>✔</span> Licensed &amp; Certified Agent</div>
+    <div class="trust-item"><span>✔</span> Serving 9 States</div>
+  </div>
+</div>
+
+<!-- ════════════════ SERVICES ════════════════ -->
+<section id="services">
+  <div class="container">
+    <div class="services-header fade-in">
+      <div class="section-tag">What We Offer</div>
+      <h2 class="section-title">Coverage Built for<br/>Real Families</h2>
+      <p class="section-sub">
+        Whether you're just starting out or planning ahead, we help you find affordable coverage that fits your life and your budget.
+      </p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-in">
+        <div class="svc-icon">❤️</div>
+        <div class="svc-title">Life Insurance</div>
+        <p class="svc-desc">
+          Give your family a financial safety net when they need it most. We help you compare term, whole life, and universal policies to find the best fit.
+        </p>
+        <a href="#contact" class="svc-link">Learn More →</a>
+      </div>
+      <div class="service-card fade-in">
+        <div class="svc-icon">🕊️</div>
+        <div class="svc-title">Final Expense</div>
+        <p class="svc-desc">
+          Affordable coverage designed to take the financial burden off your loved ones during one of life's most difficult moments — with dignity and peace of mind.
+        </p>
+        <a href="#contact" class="svc-link">Learn More →</a>
+      </div>
+      <div class="service-card fade-in">
+        <div class="svc-icon">🏥</div>
+        <div class="svc-title">Health Insurance</div>
+        <p class="svc-desc">
+          Navigate the health marketplace with confidence. We compare plans to find the right balance of coverage and cost for individuals and families.
+        </p>
+        <a href="#contact" class="svc-link">Learn More →</a>
+      </div>
+      <div class="service-card fade-in">
+        <div class="svc-icon">👴</div>
+        <div class="svc-title">Medicare Plans</div>
+        <p class="svc-desc">
+          Turning 65 or re-evaluating your Medicare options? We guide you through Part A, B, C, and D — making Medicare simple and stress-free.
+        </p>
+        <a href="#contact" class="svc-link">Learn More →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ STATES ════════════════ -->
+<section id="states">
+  <div class="container">
+    <div class="fade-in">
+      <div class="section-tag" class="section-tag section-tag--hero">Where We Serve</div>
+      <h2 class="section-title">Helping Families<br/>Across 9 States</h2>
+      <p class="section-sub">
+        Licensed and serving families across the Southeast, Northeast, and beyond — with more states coming soon.
+      </p>
+    </div>
+    <div class="states-grid fade-in">
+      <div class="state-pill home">🌴 Florida (Home State)</div>
+      <div class="state-pill">🍑 Georgia</div>
+      <div class="state-pill">🌆 Illinois</div>
+      <div class="state-pill">🦞 Massachusetts</div>
+      <div class="state-pill">🗽 New Jersey</div>
+      <div class="state-pill">🔔 Pennsylvania</div>
+      <div class="state-pill">⭐ Texas</div>
+      <div class="state-pill">🌹 Virginia</div>
+    </div>
+    <p class="states-note fade-in"><strong>More states coming soon!</strong> Contact us to find out if we're expanding to your state.</p>
+  </div>
+</section>
+
+<!-- ════════════════ ABOUT ════════════════ -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-content about-content--full fade-in">
+        <div class="section-tag">About Me</div>
+        <h2 class="section-title">Hi, I'm Jean Phillippe</h2>
+        <p class="section-sub section-sub--spaced">
+          A licensed insurance agent specializing in Life Insurance, Final Expense, Health, and Medicare plans.
+        </p>
+        <p class="about-body-text">
+          I founded Good Price Insurance because I saw how many families are unprepared when emergencies happen. My mission is to make insurance <strong>simple, affordable, and stress-free</strong> — while treating every client with integrity and respect.
+        </p>
+        <ul class="values-list">
+          <li class="value-item">
+            <span class="value-icon">🙏</span>
+            <div class="value-text">
+              <strong>Honesty Over Hype</strong>
+              <span>My faith shapes how I do business. No gimmicks — just honest guidance you can trust.</span>
+            </div>
+          </li>
+          <li class="value-item">
+            <span class="value-icon">🤝</span>
+            <div class="value-text">
+              <strong>Service Over Sales</strong>
+              <span>I'm here to help you find the right plan, not push the most expensive one.</span>
+            </div>
+          </li>
+          <li class="value-item">
+            <span class="value-icon">🏠</span>
+            <div class="value-text">
+              <strong>Protecting Families is Stewardship</strong>
+              <span>I believe coverage is an act of love and responsibility for the people you care about most.</span>
+            </div>
+          </li>
+        </ul>
+        <div class="about-ctas">
+          <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
+          <a href="#contact" class="btn btn-navy">Schedule a Call</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ TESTIMONIALS ════════════════ -->
+<section id="testimonials">
+  <div class="container">
+    <div class="testi-header fade-in">
+      <div class="section-tag">Client Reviews</div>
+      <h2 class="section-title">What Families Are Saying</h2>
+      <p class="section-sub">Real stories from real families we've had the privilege of serving.</p>
+      <div class="testi-rating-bar">
+        <div class="testi-rating-score">5.0</div>
+        <div class="testi-rating-detail">
+          <div class="testi-rating-stars">★★★★★</div>
+          <div class="testi-rating-count">From all client reviews</div>
+        </div>
+        <div class="testi-rating-divider"></div>
+        <div class="testi-rating-badges">
+          <span class="testi-badge">✔ 100% No-Pressure</span>
+          <span class="testi-badge">✔ Licensed &amp; Certified</span>
+        </div>
+      </div>
+    </div>
+    <div class="testi-grid">
+
+      <div class="testi-card fade-in">
+        <div class="testi-coverage-tag">❤️ Life Insurance</div>
+        <div class="testi-quote">"</div>
+        <p class="testi-text">Jean was incredibly patient and walked me through every option without any pressure. I finally understand my life insurance policy — and I got a much better rate than I expected!</p>
+        <div class="testi-author">
+          <div class="testi-avatar">
+            <img src="images/customer1.png" alt="Maria R." onerror="this.style.display='none'" />
+            MR
+          </div>
+          <div>
+            <div class="stars">★★★★★</div>
+            <div class="testi-name">Maria R.</div>
+            <div class="testi-loc">Miami, Florida</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card featured fade-in">
+        <div class="testi-coverage-tag">🏥 Health Insurance</div>
+        <div class="testi-quote">"</div>
+        <p class="testi-text">Finding affordable health insurance as a self-employed person felt impossible until I called Good Price Insurance. Jean compared multiple plans and saved me over $200 a month!</p>
+        <div class="testi-author">
+          <div class="testi-avatar">
+            <img src="images/customer2.png" alt="David T." onerror="this.style.display='none'" />
+            DT
+          </div>
+          <div>
+            <div class="stars">★★★★★</div>
+            <div class="testi-name">David T.</div>
+            <div class="testi-loc">Atlanta, Georgia</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card fade-in">
+        <div class="testi-coverage-tag">👴 Medicare Plans</div>
+        <div class="testi-quote">"</div>
+        <p class="testi-text">I was completely lost about Medicare. Jean explained everything clearly, helped me pick the right plan, and even followed up after enrollment to make sure everything was going smoothly.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">
+            <img src="images/customer3.png" alt="Barbara W." onerror="this.style.display='none'" />
+            BW
+          </div>
+          <div>
+            <div class="stars">★★★★★</div>
+            <div class="testi-name">Barbara W.</div>
+            <div class="testi-loc">Houston, Texas</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ CONTACT ════════════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info fade-in">
+        <div class="section-tag">Get In Touch</div>
+        <h3>Ready to Protect<br/>Your Family?</h3>
+        <p>Start with a free, no-pressure consultation. We'll walk you through your options and help you find a plan that fits your needs and budget.</p>
+        <div class="contact-methods">
+          <div class="contact-method">
+            <div class="method-icon">📞</div>
+            <div>
+              <div class="method-label">Phone / Text</div>
+              <div class="method-value">Available upon request</div>
+            </div>
+          </div>
+          <div class="contact-method">
+            <div class="method-icon">📧</div>
+            <div>
+              <div class="method-label">Email</div>
+              <div class="method-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0764686973666473476068686377756e64626e69747275666964622964686a">[email&#160;protected]</a></div>
+            </div>
+          </div>
+          <div class="contact-method">
+            <div class="method-icon">🗓️</div>
+            <div>
+              <div class="method-label">Availability</div>
+              <div class="method-value">Mon – Sat, 9 AM – 7 PM</div>
+            </div>
+          </div>
+          <div class="contact-method">
+            <div class="method-icon">🌎</div>
+            <div>
+              <div class="method-label">States Served</div>
+              <div class="method-value">FL · GA · IL · MA · NJ · PA · TX · VA</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="quote-form fade-in">
+        <h3>Get Your Free Quote</h3>
+        <p class="form-note">No obligation. No pressure. Just honest guidance.</p>
+        <form onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name *</label>
+              <input type="text" placeholder="Jane" required />
+            </div>
+            <div class="form-group">
+              <label>Last Name *</label>
+              <input type="text" placeholder="Doe" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Email *</label>
+              <input type="email" placeholder="jane@email.com" required />
+            </div>
+            <div class="form-group">
+              <label>Phone</label>
+              <input type="tel" placeholder="(555) 000-0000" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>State *</label>
+              <select required>
+                <option value="">Select your state</option>
+                <option>Florida</option>
+                <option>Georgia</option>
+                <option>Illinois</option>
+                <option>Massachusetts</option>
+                <option>New Jersey</option>
+                <option>Pennsylvania</option>
+                <option>Texas</option>
+                <option>Virginia</option>
+                <option>Other (coming soon)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Coverage Type *</label>
+              <select required>
+                <option value="">Select coverage</option>
+                <option>Life Insurance</option>
+                <option>Final Expense</option>
+                <option>Health Insurance</option>
+                <option>Medicare Plans</option>
+                <option>Not Sure — Need Guidance</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Message / Questions</label>
+            <textarea placeholder="Tell me a little about your situation and what you're looking for..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">
+            🛡️ Send My Free Quote Request
+          </button>
+          <p class="form-privacy">🔒 Your information is private and will never be shared or sold.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ FOOTER ════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo logo--footer">
+          <div class="logo-icon">🛡️</div>
+          <div class="logo-text">Good Price Insurance<span>Protection You Can Trust</span></div>
+        </a>
+        <p>Helping families across 9 states find affordable, honest insurance coverage. Because protecting your family is an act of love.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Coverage</h4>
+        <ul>
+          <li><a href="#services">Life Insurance</a></li>
+          <li><a href="#services">Final Expense</a></li>
+          <li><a href="#services">Health Insurance</a></li>
+          <li><a href="#services">Medicare Plans</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Jean Phillippe</a></li>
+          <li><a href="#states">States We Serve</a></li>
+          <li><a href="#testimonials">Client Reviews</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get Started</h4>
+        <ul>
+          <li><a href="#contact">Free Quote</a></li>
+          <li><a href="#contact">Schedule a Call</a></li>
+          <li><a href="#contact">Compare Plans</a></li>
+          <li><a href="#contact">Ask a Question</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Good Price Insurance. All rights reserved. | <a href="#contact">Privacy Policy</a></p>
+      <p class="footer-license-text">Licensed Insurance Agent · FL · GA · IL · MA · NJ · PA · TX · VA</p>
+    </div>
+    <p class="footer-disclaimer">
+      Good Price Insurance is an independent insurance agency. Products and availability vary by state. This website is for informational purposes only and does not constitute an offer of insurance. Consult a licensed agent for coverage details.
+    </p>
+  </div>
+</footer>
+
+<!-- ════════════════ SCRIPTS ════════════════ -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  // Mobile menu
+  function toggleMenu() {
+    const m = document.getElementById('mobileMenu');
+    m.classList.toggle('open');
+  }
+
+  // Scroll animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // Sticky nav shadow
+  window.addEventListener('scroll', () => {
+    document.querySelector('nav').style.boxShadow =
+      window.scrollY > 10 ? '0 4px 24px rgba(0,0,0,.2)' : 'none';
+  });
+
+  // Form submit
+  function handleSubmit(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('.form-submit');
+    btn.textContent = '✅ Request Sent!';
+    btn.disabled = true;
+    setTimeout(() => { btn.textContent = '🛡️ Send My Free Quote Request'; btn.disabled = false; e.target.reset(); }, 3000);
+  }
+</script>
+
+<!-- ════════════════ STYLE SWITCHER ════════════════ -->
+<div id="style-switcher">
+  <div class="switcher-label">🎨 Compare Styles</div>
+  <div class="switcher-pills">
+    <button class="switcher-pill theme-a active" onclick="setTheme('a')">
+      <span class="swatch"></span>
+      Classic Navy
+    </button>
+    <button class="switcher-pill theme-b" onclick="setTheme('b')">
+      <span class="swatch"></span>
+      Modern Fresh
+    </button>
+    <button class="switcher-pill theme-c" onclick="setTheme('c')">
+      <span class="swatch"></span>
+      Warm Gold
+    </button>
+    <button class="switcher-pill theme-d" onclick="setTheme('d')">
+      <span class="swatch"></span>
+      Rose Blush
+    </button>
+  </div>
+</div>
+
+<script>
+  const THEMES = ['a', 'b', 'c', 'd'];
+
+  function setTheme(theme) {
+    const body = document.body;
+    body.classList.add('switching');
+
+    setTimeout(() => {
+      // Remove all theme classes, add the new one
+      THEMES.forEach(t => body.classList.remove('theme-' + t));
+      if (theme !== 'a') body.classList.add('theme-' + theme);
+
+      // Update active pill
+      document.querySelectorAll('.switcher-pill').forEach(p => p.classList.remove('active'));
+      document.querySelector('.switcher-pill.theme-' + theme).classList.add('active');
+
+      body.classList.remove('switching');
+    }, 150);
+  }
+</script>
+
+</body>
+</html>
