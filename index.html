@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Good Price Insurance – Protecting What Matters Most</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&family=Fraunces:ital,wght@0,600;0,700;1,700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,700&family=Inter:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&family=Fraunces:ital,wght@0,600;0,700;1,700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -60,7 +60,7 @@
         </p>
         <div class="hero-actions">
           <a href="#contact" class="btn btn-primary">🛡️ Get a Free Quote</a>
-          <a href="#contact" class="btn btn-outline">📞 Schedule a Call</a>
+          <a href="#contact" class="btn btn-white">📞 Schedule a Call</a>
         </div>
         <div class="hero-stats">
           <div class="stat-item">
@@ -214,14 +214,16 @@
 
 <!-- ════════════════ ABOUT ════════════════ -->
 <section id="about">
-  <div class="container">
-    <div class="about-grid">
-      <div class="about-content about-content--full fade-in">
-        <div class="section-tag">About Me</div>
-        <h2 class="section-title">Hi, I'm Jean Phillippe</h2>
-        <p class="section-sub section-sub--spaced">
-          A licensed insurance agent specializing in Life Insurance, Final Expense, Health, and Medicare plans.
-        </p>
+  <div class="about-inner">
+    <div class="about-sidebar fade-in">
+      <div class="section-tag">About Me</div>
+      <h2 class="section-title">Hi, I'm Jean Phillippe</h2>
+      <p class="section-sub">
+        A licensed insurance agent specializing in Life Insurance, Final Expense, Health, and Medicare plans.
+      </p>
+    </div>
+    <div class="about-main">
+    <div class="about-content about-content--full fade-in">
         <p class="about-body-text">
           I founded Good Price Insurance because I saw how many families are unprepared when emergencies happen. My mission is to make insurance <strong>simple, affordable, and stress-free</strong> — while treating every client with integrity and respect.
         </p>
@@ -253,8 +255,8 @@
           <a href="#contact" class="btn btn-navy">Schedule a Call</a>
         </div>
       </div>
-    </div>
-  </div>
+    </div><!-- /.about-main -->
+  </div><!-- /.about-inner -->
 </section>
 
 <!-- ════════════════ TESTIMONIALS ════════════════ -->
@@ -336,9 +338,8 @@
 
 <!-- ════════════════ CONTACT ════════════════ -->
 <section id="contact">
-  <div class="container">
-    <div class="contact-grid">
-      <div class="contact-info fade-in">
+  <div class="contact-grid">
+    <div class="contact-info fade-in">
         <div class="section-tag">Get In Touch</div>
         <h3>Ready to Protect<br/>Your Family?</h3>
         <p>Start with a free, no-pressure consultation. We'll walk you through your options and help you find a plan that fits your needs and budget.</p>
@@ -373,7 +374,8 @@
           </div>
         </div>
       </div>
-      <div class="quote-form fade-in">
+    <div class="contact-form-wrap fade-in">
+      <div class="quote-form">
         <h3>Get Your Free Quote</h3>
         <p class="form-note">No obligation. No pressure. Just honest guidance.</p>
         <form onsubmit="handleSubmit(event)">
@@ -434,9 +436,9 @@
           </button>
           <p class="form-privacy">🔒 Your information is private and will never be shared or sold.</p>
         </form>
-      </div>
-    </div>
-  </div>
+      </div><!-- /.quote-form -->
+    </div><!-- /.contact-form-wrap -->
+  </div><!-- /.contact-grid -->
 </section>
 
 <!-- ════════════════ FOOTER ════════════════ -->
